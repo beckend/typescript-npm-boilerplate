@@ -1,0 +1,4 @@
+app:
+  build: .
+  entrypoint: /bin/zsh
+  command: -c "source '/usr/local/.nvm/nvm.sh' && gulp ci"

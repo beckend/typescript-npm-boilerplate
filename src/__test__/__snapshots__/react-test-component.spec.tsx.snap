@@ -1,0 +1,5 @@
+exports[`react component Renders with jest test rendrer 1`] = `
+<div>
+  My string
+</div>
+`;

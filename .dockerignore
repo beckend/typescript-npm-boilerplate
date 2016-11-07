@@ -1,0 +1,12 @@
+.coveralls.yml
+.git
+.gitattributes
+.gitignore
+.travis.yml
+.vscode
+Dockerfile
+coverage
+docker-compose.test.yml
+docker-compose.yml
+node_modules
+tmp
