@@ -70,6 +70,7 @@ interface IWriteSingleFileArgs {
   // Google closure compiler flags, will be merged with defaults above
   compilerFlags?: any;
 }
+// tslint:disable-next-line
 const writeSingleFile = async ({ filePath, compilerFlags }: IWriteSingleFileArgs) => {
   // First read the orignal file
   const source = await pReadFile(filePath, encoding);
@@ -117,7 +118,7 @@ interface IWriteAllFilesArgs {
   // Google closure compiler flags, will be merged with defaults above
   compilerFlags?: any;
 }
-export const writeAllFiles = async ({ filePaths, compilerFlags }: IWriteAllFilesArgs) => {
+export const writeAllFiles = ({ filePaths, compilerFlags }: IWriteAllFilesArgs) => {
   const writePromises: Bluebird.Thenable<any>[] = [];
   filePaths.forEach((filePath) => {
     writePromises.push(

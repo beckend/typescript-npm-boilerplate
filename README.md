@@ -23,3 +23,5 @@ Supports:
 ### Dist
 - `gulp` will run default task which consist of running tasks:
 - `lint`, `clean`, `build`, `minify` then `jest` and collect coverage.
+
+Note all `minified` files are `ES5`.
