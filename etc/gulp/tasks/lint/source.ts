@@ -9,6 +9,6 @@ import { getLinterTslintStream } from './utils/get-linter-tslint-stream';
 
 gulp.task('lint:src', () => {
   return getLinterTslintStream({
-    src: `${PATH_SRC}/**/*.{ts,tsx}`,
+    src: [`${PATH_SRC}/**/*.{ts,tsx}`, '!**/*.d.ts'],
   });
 });

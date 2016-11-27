@@ -1,3 +1,3 @@
 import './source';
-import './gulp';
+import './internals';
 import './all';

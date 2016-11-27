@@ -1,14 +1,14 @@
 /**
- * Lint gulp
+ * Lint internals
  */
 import * as gulp from 'gulp';
 import {
-  PATH_GULP,
+  PATH_INTERNALS,
 } from '../../config';
 import { getLinterTslintStream } from './utils/get-linter-tslint-stream';
 
-gulp.task('lint:gulp', () => {
+gulp.task('lint:internals', () => {
   return getLinterTslintStream({
-    src: `${PATH_GULP}/**/*.{ts,tsx}`,
+    src: [`${PATH_INTERNALS}/**/*.{ts,tsx}`, '!**/*.d.ts'],
   });
 });

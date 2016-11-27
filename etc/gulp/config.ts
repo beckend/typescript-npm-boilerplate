@@ -18,16 +18,18 @@ export const DIR_NODE_MODULES = 'node_modules';
  * Files
  */
 export const FILE_PACKAGE = 'package.json';
-// Default jsconfig
 export const FILE_TSCONFIG_DEFAULT = 'tsconfig.json';
+export const FILE_TSLINT_DEFAULT = 'tslint.json';
 
 /**
  * Full paths
  */
 export const PATH_ROOT = path.join(__dirname, '../..');
+export const PATH_INTERNALS = path.join(PATH_ROOT, 'internals');
 export const PATH_NODE_MODULES = path.join(PATH_ROOT, DIR_NODE_MODULES);
 export const PATH_PACKAGE = path.join(PATH_ROOT, FILE_PACKAGE);
 export const PATH_TSCONFIG_DEFAULT = path.join(PATH_ROOT, FILE_TSCONFIG_DEFAULT);
+export const PATH_TSLINT_DEFAULT = path.join(PATH_ROOT, FILE_TSLINT_DEFAULT);
 export const PATH_BUILD_ES5 = path.join(PATH_ROOT, DIR_BUILD_ES5);
 export const PATH_BUILD_ES2015 = path.join(PATH_ROOT, DIR_BUILD_ES2015);
 export const PATH_BUILD_ES2017 = path.join(PATH_ROOT, DIR_BUILD_ES2017);

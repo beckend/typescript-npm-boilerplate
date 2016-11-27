@@ -1,27 +1,35 @@
 import * as gulp from 'gulp';
-// import {
-//   PATH_TSCONFIG_DEFAULT,
-// } from '../../../config';
-import {  } from 'tslint';
+import {
+  PATH_TSLINT_DEFAULT,
+} from '../../../config';
 import gTslint from 'gulp-tslint';
+import * as gDebug from 'gulp-debug';
+
+const tslintStylish = require('tslint-stylish');
 
 interface IGetLinterTslintStreamArgs {
   // used in gulp.src
-  src: string | string[];
-  srcOpts?: gulp.SrcOptions;
+  readonly src: string | string[];
+  readonly srcOpts?: gulp.SrcOptions;
   // see https://github.com/panuhorsmalahti/gulp-tslint typings are not up to date
-  tslintOpts?: any;
+  readonly tslintOpts?: any;
   // outdated typings
-  tslintReportOpts?: any;
+  readonly tslintReportOpts?: any;
 }
 export const getLinterTslintStream = ({ src, srcOpts }: IGetLinterTslintStreamArgs) => {
   // const program = tslint.createProgram(PATH_TSCONFIG_DEFAULT);
   return gulp.src(src, srcOpts || {})
+    .pipe(gDebug({ title: 'Lint file:' }))
     .pipe(gTslint({
       // program,
+      configuration: PATH_TSLINT_DEFAULT,
       formatter: 'verbose',
     }))
-    .pipe(gTslint.report({
-      summarizeFailureOutput: true,
-    }));
+    .pipe((gTslint as any).report(
+      tslintStylish,
+      {
+        emitError: true,
+        summarizeFailureOutput: true,
+      }
+    ));
 };
