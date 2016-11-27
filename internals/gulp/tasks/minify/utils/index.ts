@@ -18,11 +18,11 @@ const compiler = require('google-closure-compiler-js').compile;
 
 interface IGCCompilerOutput {
   // Outputed minified code
-  compiledCode: string;
-  errors: string[];
-  warnings: string[];
+  readonly compiledCode: string;
+  readonly errors: string[];
+  readonly warnings: string[];
   // Outputed sourcemap from minified code
-  sourceMap: string;
+  readonly sourceMap: string;
 }
 
 // Get the minified filename, very dirty because of path.parse does not handle multiple exts

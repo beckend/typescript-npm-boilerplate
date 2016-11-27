@@ -11,24 +11,24 @@ const gSourcemaps = require('gulp-sourcemaps');
 
 interface IGetBuildStream {
   // gulp.dest
-  dest: string;
+  readonly dest: string;
   // gulp-typescript .createProject output
-  tsProject: Project;
+  readonly tsProject: Project;
   // taskName for debugging
-  taskName: string;
+  readonly taskName: string;
 }
 export const getBuildStream = ({ dest, tsProject, taskName }: IGetBuildStream) => {
   const tsResult = tsProject.src()
     .pipe(gSourcemaps.init())
     .pipe(
-      tsProject(
-        gTs.reporter.fullReporter(true)
-      )
-        .once('error', (er: any) => {
-          if (er) {
-            throw er;
-          }
-        })
+    tsProject(
+      gTs.reporter.fullReporter(true)
+    )
+      .once('error', (er: any) => {
+        if (er) {
+          throw er;
+        }
+      })
     );
 
   // Write js files
