@@ -19,7 +19,7 @@ ENV HOME /root
 CMD ["/sbin/my_init"]
 
 # Copy stuff
-COPY etc/docker/fs/root/ /root/
+COPY internals/docker/fs/root/ /root/
 
 # Update OS
 RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
