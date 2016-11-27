@@ -8,6 +8,7 @@
 ### Requires
 - `>npm@4.x` because of `prepare` script in `package.json`.
 - `npm -g i gulp-cli jest-cli`.
+- optional and faster `yarn` - `yarn install`, `yarn add global gulp-cli jest-cli`.
 
 ### Usage
 - `gulp --tasks` to get going.
