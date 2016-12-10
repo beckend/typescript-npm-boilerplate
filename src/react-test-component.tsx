@@ -1,3 +1,4 @@
+import 'tslib';
 import * as React from 'react';
 
 export interface ITestComponentProps {

@@ -11,7 +11,6 @@
     "url": "https://github.com/beckend/typescript-npm-boilerplate/issues"
   },
   "files": [
-    "build",
     "build-es2015"
   ],
   "main": "./build-es2015/index.js",
@@ -105,7 +104,8 @@
   },
   "dependencies": {
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "tslib": "^1.2.0"
   },
   "engines": {
     "node": ">=6.9.1"
