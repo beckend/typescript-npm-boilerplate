@@ -1,4 +1,5 @@
 /* tslint:disable: no-console */
+/* tslint:disable: non-literal-require */
 /**
  * Run jest and collect coverage
  */

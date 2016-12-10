@@ -10,9 +10,9 @@
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-0.0.29.tgz#a1e514adfbd92f03a224ba54d693111dbf1f3754"
 
-"@types/enzyme@^2.5.38":
-  version "2.5.38"
-  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-2.5.38.tgz#e18519515c7aeb9a8a11699b8b45406d5b321f85"
+"@types/enzyme@^2.5.39":
+  version "2.5.39"
+  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-2.5.39.tgz#735efab43a93285aae169ea968ea0fb259fa8d68"
   dependencies:
     "@types/react" "*"
 
@@ -42,9 +42,9 @@
     "@types/orchestrator" "*"
     "@types/vinyl" "*"
 
-"@types/jest@^16.0.0":
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-16.0.0.tgz#5fe49adee6db194357a52438c0d80695b59a45e9"
+"@types/jest@^16.0.1":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-16.0.1.tgz#c7820ab2bedefe121d0e5ffaa8d0b22f44793f24"
 
 "@types/merge2@^0.3.29":
   version "0.3.29"
@@ -72,13 +72,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "0.14.49"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.49.tgz#983b773c91d341488e06d57ba677301b2cd9b846"
-
-"@types/react@^0.14.50":
-  version "0.14.50"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.50.tgz#3f3f69db5661c8be3df99bde688e11300ef8131e"
+"@types/react@*", "@types/react@^0.14.54":
+  version "0.14.54"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.54.tgz#0fb0dadad895febeb468a885d0fa2284d5bbefae"
 
 "@types/vinyl@*":
   version "1.2.30"
@@ -819,9 +815,9 @@ diff@^2.2.1:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/diff/-/diff-2.2.3.tgz#60eafd0d28ee906e4e8ff0a52c1229521033bf99"
 
-diff@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.0.1.tgz#a52d90cc08956994be00877bff97110062582c35"
+diff@^3.0.0, diff@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.1.0.tgz#9406c73a401e6c2b3ba901c5e2c44eb6a60c5385"
 
 dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
@@ -1357,9 +1353,9 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
-google-closure-compiler-js@^20161024.0.0:
-  version "20161024.0.0"
-  resolved "https://registry.yarnpkg.com/google-closure-compiler-js/-/google-closure-compiler-js-20161024.0.0.tgz#ed8808dbf1fdcb306435e8afb4ae887c01883e86"
+google-closure-compiler-js@^20161201.0.0:
+  version "20161201.0.0"
+  resolved "https://registry.yarnpkg.com/google-closure-compiler-js/-/google-closure-compiler-js-20161201.0.0.tgz#777d789fb8aa170d9b0269a41206d9810845556d"
   dependencies:
     gulp-util "^3.0.7"
     webpack-core "^0.6.8"
@@ -3583,9 +3579,9 @@ trim-newlines@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-1.0.0.tgz#5887966bb582a4503a41eb524f7d35011815a613"
 
-ts-jest@^17.0.0:
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-17.0.0.tgz#745029f35c5cdebbacfbdc8e807740a149d2caab"
+ts-jest@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-17.0.3.tgz#63915b6446e41366b9ca8c1ec88772c586c62230"
   dependencies:
     glob-all "^3.1.0"
     istanbul-lib-instrument "^1.2.0"
@@ -3596,12 +3592,13 @@ ts-jest@^17.0.0:
     source-map-support "^0.4.4"
     yargs "^6.1.1"
 
-ts-node@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-1.7.0.tgz#18be2d80508008a3a4640e17982df73a402b7416"
+ts-node@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-1.7.2.tgz#d67bbc5c48fde16c244debbfe81b020587369a02"
   dependencies:
     arrify "^1.0.0"
     chalk "^1.1.1"
+    diff "^3.1.0"
     make-error "^1.1.1"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
@@ -3621,9 +3618,9 @@ tsconfig@^5.0.2:
     strip-bom "^2.0.0"
     strip-json-comments "^2.0.0"
 
-tslint-microsoft-contrib@^2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/tslint-microsoft-contrib/-/tslint-microsoft-contrib-2.0.13.tgz#30ed7e1a03261eea091354eaca3afe7b25e04ca7"
+tslint-microsoft-contrib@^2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/tslint-microsoft-contrib/-/tslint-microsoft-contrib-2.0.14.tgz#a6c1acafedd4b2707d0a8719472d1ba8c0a7eb78"
 
 tslint-react@^1.1.0:
   version "1.1.0"
@@ -3664,9 +3661,9 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-typescript@^2.2.0-dev.20161127:
-  version "2.2.0-dev.20161127"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.0-dev.20161127.tgz#3da590d1a0f15da9c39d2ebeab2006fb6b4d8949"
+typescript@next:
+  version "2.2.0-dev.20161210"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.0-dev.20161210.tgz#9bfa2186c9fd8976f7fb54aa74aa3fe65b3f5e2d"
 
 ua-parser-js@^0.7.9:
   version "0.7.12"
