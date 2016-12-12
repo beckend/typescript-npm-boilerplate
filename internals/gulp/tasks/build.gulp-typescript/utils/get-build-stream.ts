@@ -34,7 +34,7 @@ export const getBuildStream = ({ dest, tsProject, taskName }: IGetBuildStream) =
   // Write js files
   const jsStream = tsResult.js
     .pipe(gDebug({
-      title: `${taskName}-write-js: `,
+      title: `${taskName}-write-js: `
     }))
     .pipe(gSourcemaps.write('.'))
     .pipe(gulp.dest(dest));
@@ -42,12 +42,12 @@ export const getBuildStream = ({ dest, tsProject, taskName }: IGetBuildStream) =
   // Write typings
   const dtsStream = tsResult.dts
     .pipe(gDebug({
-      title: `${taskName}-write-dts: `,
+      title: `${taskName}-write-dts: `
     }))
     .pipe(gulp.dest(dest));
 
   return mergeStream([
     jsStream,
-    dtsStream,
+    dtsStream
   ]);
 };

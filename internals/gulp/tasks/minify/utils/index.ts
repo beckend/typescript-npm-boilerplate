@@ -61,7 +61,7 @@ const defaultCompilerFlags = {
   // processCommonJsModules: false,
   // Usefull if distributing to browser
   // outputWrapper: '(function(){%output%}).call(this)',
-  createSourceMap: true,
+  createSourceMap: true
 };
 
 interface IWriteSingleFileArgs {
@@ -80,8 +80,8 @@ const writeSingleFile = async ({ filePath, compilerFlags }: IWriteSingleFileArgs
     defaultCompilerFlags,
     {
       jsCode: [{
-        src: source,
-      }],
+        src: source
+      }]
     },
     compilerFlags
   );
@@ -107,7 +107,7 @@ const writeSingleFile = async ({ filePath, compilerFlags }: IWriteSingleFileArgs
       .then(() => {
         debug(`Wrote file ${minMapFileName}`);
         return minMapFileName;
-      }),
+      })
   ]);
 };
 

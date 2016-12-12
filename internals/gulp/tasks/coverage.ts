@@ -6,7 +6,7 @@
 import * as gulp from 'gulp';
 import * as debugMod from 'debug';
 import {
-  PATH_PACKAGE,
+  PATH_PACKAGE
 } from '../config';
 import { cmdSpawn } from 'cmd-spawn';
 

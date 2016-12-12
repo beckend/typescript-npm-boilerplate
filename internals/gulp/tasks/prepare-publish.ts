@@ -8,7 +8,7 @@ const gV4: any = gulp;
 gulp.task('prepare:publish', (gV4.series(
   gV4.parallel(
     'clean:all',
-    'lint:all',
+    'lint:all'
   ),
 
   gV4.parallel(

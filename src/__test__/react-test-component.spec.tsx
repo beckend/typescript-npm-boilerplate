@@ -4,11 +4,11 @@
 import * as React from 'react';
 import {
   TestComponent,
-  ITestComponentProps,
+  ITestComponentProps
 } from '../react-test-component';
 import {
   mount,
-  ReactWrapper,
+  ReactWrapper
 } from 'enzyme';
 
 const renderer = require('react-test-renderer');

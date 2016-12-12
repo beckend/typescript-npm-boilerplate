@@ -3,7 +3,7 @@
  */
 import * as gulp from 'gulp';
 import {
-  PATH_BUILD_ES2017,
+  PATH_BUILD_ES2017
 } from '../../config';
 import { writeAllFiles } from './utils';
 
@@ -13,7 +13,7 @@ gulp.task('minify:src-es2017', async () => {
   const filePaths: string[] = await globby([
     `${PATH_BUILD_ES2017}/**/*.js`,
     '!**/*.spec.*',
-    '!**/*.min.*',
+    '!**/*.min.*'
   ]);
   if (filePaths.length > 0) {
     return writeAllFiles({
@@ -21,8 +21,8 @@ gulp.task('minify:src-es2017', async () => {
       compilerFlags: {
         languageIn: 'ECMASCRIPT6',
         // ES6 out not yet supported
-        languageOut: 'ECMASCRIPT5',
-      },
+        languageOut: 'ECMASCRIPT5'
+      }
     });
   }
 });

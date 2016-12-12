@@ -5,7 +5,7 @@ import * as gulp from 'gulp';
 import * as path from 'path';
 import {
   PATH_SRC,
-  PATH_BUILD_ES2015,
+  PATH_BUILD_ES2015
 } from '../../config';
 import { createProject } from 'gulp-typescript';
 import { getBuildStream } from './utils/get-build-stream';
@@ -20,6 +20,6 @@ gulp.task(taskName, () => {
   return getBuildStream({
     taskName,
     tsProject,
-    dest: PATH_BUILD_ES2015,
+    dest: PATH_BUILD_ES2015
   });
 });

@@ -7,26 +7,21 @@
     "tslint-microsoft-contrib/recommended_ruleset"
   ],
   "rules": {
-    "no-for-in-array": false,
-    "restrict-plus-operands": false,
-    "mocha-no-side-effect-code": false,
     "no-unused-variable": [
       true,
       "react"
     ],
+    "no-for-in-array": false,
+    "restrict-plus-operands": false,
+    "mocha-no-side-effect-code": false,
     "no-empty-interfaces": false,
-    "trailing-comma": [
-      true,
-      {
-        "multiline": "always",
-        "singleline": "never"
-      }
-    ],
     "no-any": false,
     "arrow-parens": true,
     "import-name": false,
     "export-name": false,
-    "ordered-imports": false,
+    "ordered-imports": [
+      false
+    ],
     "no-relative-imports": false,
     "missing-jsdoc": false,
     "no-require-imports": false,

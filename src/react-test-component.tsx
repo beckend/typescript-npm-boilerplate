@@ -7,7 +7,7 @@ export interface ITestComponentProps {
 export class TestComponent extends React.Component<ITestComponentProps, {}> {
 
   public static defaultProps: ITestComponentProps = {
-    str1: 'some string',
+    str1: 'some string'
   };
 
   public render() {
