@@ -1,3 +1,4 @@
+/* tslint:disable: jsx-wrap-multiline */
 /**
  * React test
  */
