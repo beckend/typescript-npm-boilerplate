@@ -74,7 +74,7 @@
     "@types/gulp-typescript": "0.0.32",
     "@types/jest": "^16.0.3",
     "@types/merge2": "^0.3.29",
-    "@types/react": "0.14.57",
+    "@types/react": "^15.0.0",
     "@types/react-dom": "^0.14.20",
     "bluebird": "^3.4.7",
     "cmd-spawn": "^1.4.0",
@@ -84,7 +84,7 @@
     "fs-extra": "^1.0.0",
     "globby": "^6.1.0",
     "google-closure-compiler-js": "^20161201.0.0",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "gulpjs/gulp.git#4.0",
     "gulp-debug": "^3.0.0",
     "gulp-run": "^1.7.1",
     "gulp-sourcemap": "^1.0.1",
@@ -98,9 +98,9 @@
     "ts-node": "^2.0.0",
     "tslint": "^4.3.1",
     "tslint-microsoft-contrib": "^4.0.0",
-    "tslint-react": "^2.2.0",
+    "tslint-react": "^2.3.0",
     "tslint-stylish": "^2.1.0-beta",
-    "typescript": "next"
+    "typescript": "^2.1.5"
   },
   "dependencies": {
     "react": "^15.4.2",

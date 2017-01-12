@@ -72,13 +72,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "0.14.55"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.55.tgz#f7f7a6ad0c94780531e95632435b2798c5dad11b"
-
-"@types/react@0.14.57":
-  version "0.14.57"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.14.57.tgz#1878a8654fafdd1d381b8457292b6433498c5b62"
+"@types/react@*", "@types/react@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.0.tgz#33eb3438130614f25c07c09e46ebec5a8d45b3b0"
 
 "@types/vinyl@*":
   version "2.0.0"
@@ -1251,8 +1247,8 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 fsevents@^1.0.0:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.0.15.tgz#fa63f590f3c2ad91275e4972a6cea545fb0aae44"
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.0.17.tgz#8537f3f12272678765b4fd6528c0f1f66f8f4558"
   dependencies:
     nan "^2.3.0"
     node-pre-gyp "^0.6.29"
@@ -1369,8 +1365,8 @@ glob-stream@^5.3.2:
     unique-stream "^2.0.2"
 
 glob-watcher@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/glob-watcher/-/glob-watcher-3.0.0.tgz#7771455ad188d955db8df077aced66b6cb28687b"
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/glob-watcher/-/glob-watcher-3.1.0.tgz#375b7c73f042c608756221d5c511eb09b8178080"
   dependencies:
     async-done "^1.2.0"
     chokidar "^1.4.3"
@@ -1570,9 +1566,9 @@ gulp-util@3.0.7, gulp-util@^3.0.0, gulp-util@^3.0.7, gulp-util@~3.0.7:
     through2 "^2.0.0"
     vinyl "^0.5.0"
 
-"gulp@github:gulpjs/gulp#4.0":
+gulp@gulpjs/gulp.git#4.0:
   version "4.0.0-alpha.2"
-  resolved "https://codeload.github.com/gulpjs/gulp/tar.gz/e9e5ab7e70080e1bfb5650a4fdc4c8849e70b3e0"
+  resolved "https://codeload.github.com/gulpjs/gulp/tar.gz/3f5aba28718dc19e4bf600fb88f128158ff2ff83"
   dependencies:
     glob-watcher "^3.0.0"
     gulp-cli "^1.0.0"
@@ -2821,8 +2817,8 @@ mute-stdout@^1.0.0:
   resolved "https://registry.yarnpkg.com/mute-stdout/-/mute-stdout-1.0.0.tgz#5b32ea07eb43c9ded6130434cf926f46b2a7fd4d"
 
 nan@^2.3.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.4.0.tgz#fb3c59d45fe4effe215f0b890f8adf6eb32d2232"
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.5.0.tgz#aa8f1e34531d807e9e27755b234b4a6ec0c152a8"
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -2909,8 +2905,8 @@ now-and-later@^1.0.0:
     once "^1.3.2"
 
 npmlog@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.0.1.tgz#d14f503b4cd79710375553004ba96e6662fbc0b8"
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.0.2.tgz#d03950e0e78ce1527ba26d2a7592e9348ac3e75f"
   dependencies:
     are-we-there-yet "~1.1.2"
     console-control-strings "~1.1.0"
@@ -3875,9 +3871,9 @@ tslint-microsoft-contrib@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/tslint-microsoft-contrib/-/tslint-microsoft-contrib-4.0.0.tgz#7e00a56c1417251d3f91a880efcc43361a69fb2a"
 
-tslint-react@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-2.2.0.tgz#c2a080fafd4d61f0f78dd1d6c91206718157e038"
+tslint-react@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-2.3.0.tgz#4d10ea96de278458aac3f9a7f616a442a18634a2"
 
 tslint-stylish@^2.1.0-beta:
   version "2.1.0-beta"
@@ -3916,9 +3912,9 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-typescript@next:
-  version "2.2.0-dev.20161212"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.0-dev.20161212.tgz#97c6561f6e95b9b1402b733e0e106079dcf99a7f"
+typescript@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
 
 ua-parser-js@^0.7.9:
   version "0.7.12"
