@@ -2,9 +2,9 @@
 /**
  * es2015 build
  */
+import { cmdSpawn } from 'cmd-spawn';
 import * as debugMod from 'debug';
 import * as gulp from 'gulp';
-import { cmdSpawn } from 'cmd-spawn';
 
 gulp.task('build:src-es2015', async () => {
   const cmd = './node_modules/typescript/bin/tsc --p src/tsconfig-es2015.json';

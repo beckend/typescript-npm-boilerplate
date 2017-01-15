@@ -1,10 +1,10 @@
 /**
  * Cleanup
  */
-import * as gulp from 'gulp';
-import * as fs from 'fs-extra';
-import { PATH_COVERAGE } from '../../config';
 import * as debugMod from 'debug';
+import * as fs from 'fs-extra';
+import * as gulp from 'gulp';
+import { PATH_COVERAGE } from '../../config';
 
 gulp.task('clean:coverage', (done: Function) => {
   const debug = debugMod('task-clean-coverage');

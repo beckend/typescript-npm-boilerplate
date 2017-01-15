@@ -1,35 +1,15 @@
 {
-  "rulesDirectory": [
-    "node_modules/tslint-microsoft-contrib"
-  ],
   "extends": [
     "tslint-react",
-    "tslint-microsoft-contrib/recommended_ruleset"
+    "tslint:recommended"
   ],
   "rules": {
-    "no-unused-variable": [
-      true,
-      "react"
-    ],
-    "no-for-in-array": false,
-    "restrict-plus-operands": false,
-    "mocha-no-side-effect-code": false,
-    "no-empty-interfaces": false,
-    "no-any": false,
-    "arrow-parens": true,
-    "import-name": false,
-    "export-name": false,
-    "ordered-imports": [
-      false
-    ],
-    "no-relative-imports": false,
-    "missing-jsdoc": false,
+    "quotemark": [true, "single", "avoid-escape"],
     "no-require-imports": false,
     "no-var-requires": false,
-    "prefer-type-cast": false,
-    "jsx-curly-spacing": [
-      true,
-      "always"
-    ]
+    "jsx-no-multiline-js": false,
+    "jsx-curly-spacing": [2, "always", {"spacing": {
+      "objectLiterals": "never"
+    }}]
   }
 }

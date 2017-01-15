@@ -2,15 +2,15 @@
 /**
  * React test
  */
-import * as React from 'react';
-import {
-  TestComponent,
-  ITestComponentProps
-} from '../react-test-component';
 import {
   mount,
-  ReactWrapper
+  ReactWrapper,
 } from 'enzyme';
+import * as React from 'react';
+import {
+  ITestComponentProps,
+  TestComponent,
+} from '../react-test-component';
 
 const renderer = require('react-test-renderer');
 
@@ -29,7 +29,7 @@ describe('react component', () => {
     wrapper = mount<ITestComponentProps, {}>(
       <TestComponent
         str1='My string'
-      />
+      />,
     );
     expect(wrapper.find(TestComponent).length)
       .toEqual(1);
@@ -39,7 +39,7 @@ describe('react component', () => {
     const component = renderer.create(
       <TestComponent
         str1='My string'
-      />
+      />,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

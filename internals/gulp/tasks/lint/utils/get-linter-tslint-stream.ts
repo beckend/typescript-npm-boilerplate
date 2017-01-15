@@ -1,13 +1,13 @@
 import * as gulp from 'gulp';
-import {
-  PATH_TSLINT_DEFAULT
-  // PATH_TSCONFIG_DEFAULT,
-  // PATH_ROOT
-} from '../../../config';
+import * as gDebug from 'gulp-debug';
 import gTslint from 'gulp-tslint';
 // import { Linter } from 'tslint';
 import * as tslint from 'tslint';
-import * as gDebug from 'gulp-debug';
+import {
+  PATH_TSLINT_DEFAULT,
+  // PATH_TSCONFIG_DEFAULT,
+  // PATH_ROOT
+} from '../../../config';
 
 const tslintStylish = require('tslint-stylish');
 
@@ -28,13 +28,13 @@ export const getLinterTslintStream = ({ src, srcOpts }: IGetLinterTslintStreamAr
       // program,
       tslint,
       configuration: PATH_TSLINT_DEFAULT,
-      formatter: 'verbose'
+      formatter: 'verbose',
     }))
     .pipe((gTslint as any).report(
       tslintStylish,
       {
         emitError: true,
-        summarizeFailureOutput: true
-      }
+        summarizeFailureOutput: true,
+      },
     ));
 };

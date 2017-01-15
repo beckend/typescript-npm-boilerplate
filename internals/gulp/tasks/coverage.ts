@@ -3,12 +3,12 @@
 /**
  * Run jest and collect coverage
  */
-import * as gulp from 'gulp';
-import * as debugMod from 'debug';
-import {
-  PATH_PACKAGE
-} from '../config';
 import { cmdSpawn } from 'cmd-spawn';
+import * as debugMod from 'debug';
+import * as gulp from 'gulp';
+import {
+  PATH_PACKAGE,
+} from '../config';
 
 gulp.task('coverage', async () => {
   const pkg = require(PATH_PACKAGE);

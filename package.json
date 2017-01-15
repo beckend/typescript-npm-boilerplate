@@ -72,7 +72,7 @@
     "@types/gulp": "^3.8.32",
     "@types/gulp-debug": "^2.0.29",
     "@types/gulp-typescript": "0.0.32",
-    "@types/jest": "^16.0.3",
+    "@types/jest": "^16.0.4",
     "@types/merge2": "^0.3.29",
     "@types/react": "^15.0.0",
     "@types/react-dom": "^0.14.20",
@@ -97,7 +97,6 @@
     "ts-jest": "^18.0.1",
     "ts-node": "^2.0.0",
     "tslint": "^4.3.1",
-    "tslint-microsoft-contrib": "^4.0.0",
     "tslint-react": "^2.3.0",
     "tslint-stylish": "^2.1.0-beta",
     "typescript": "^2.1.5"

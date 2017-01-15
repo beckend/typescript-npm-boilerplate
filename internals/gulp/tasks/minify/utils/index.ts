@@ -4,10 +4,10 @@
 /**
  * Using google closure compiler js
  */
+import * as Bluebird from 'bluebird';
+import * as debugMod from 'debug';
 import * as fsMod from 'fs-extra';
 import * as path from 'path';
-import * as debugMod from 'debug';
-import * as Bluebird from 'bluebird';
 
 const encoding = 'utf8';
 
@@ -54,14 +54,14 @@ const getMapName = (filePath: string) => `${filePath}.map`;
 
 // Write single file
 const defaultCompilerFlags = {
+  compilationLevel: 'ADVANCED',
+  createSourceMap: true,
   languageIn: 'ECMASCRIPT5',
   languageOut: 'ECMASCRIPT5',
   warningLevel: 'VERBOSE',
-  compilationLevel: 'ADVANCED',
   // processCommonJsModules: false,
   // Usefull if distributing to browser
   // outputWrapper: '(function(){%output%}).call(this)',
-  createSourceMap: true
 };
 
 interface IWriteSingleFileArgs {
@@ -80,10 +80,10 @@ const writeSingleFile = async ({ filePath, compilerFlags }: IWriteSingleFileArgs
     defaultCompilerFlags,
     {
       jsCode: [{
-        src: source
-      }]
+        src: source,
+      }],
     },
-    compilerFlags
+    compilerFlags,
   );
   debug(`Minifying: ${filePath}`);
   const output: IGCCompilerOutput = compiler(passedCompilerFlags);
@@ -107,7 +107,7 @@ const writeSingleFile = async ({ filePath, compilerFlags }: IWriteSingleFileArgs
       .then(() => {
         debug(`Wrote file ${minMapFileName}`);
         return minMapFileName;
-      })
+      }),
   ]);
 };
 
@@ -119,10 +119,10 @@ interface IWriteAllFilesArgs {
   compilerFlags?: any;
 }
 export const writeAllFiles = ({ filePaths, compilerFlags }: IWriteAllFilesArgs) => {
-  const writePromises: Bluebird.Thenable<any>[] = [];
+  const writePromises: Array<Bluebird.Thenable<any>> = [];
   filePaths.forEach((filePath) => {
     writePromises.push(
-      writeSingleFile({ filePath, compilerFlags })
+      writeSingleFile({ filePath, compilerFlags }),
     );
   });
   return Bluebird.all(writePromises);

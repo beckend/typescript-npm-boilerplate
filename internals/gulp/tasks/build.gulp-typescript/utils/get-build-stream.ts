@@ -2,9 +2,9 @@
  * Build - output sourcemap and typings
  */
 import * as gulp from 'gulp';
+import * as gDebug from 'gulp-debug';
 import { Project } from 'gulp-typescript';
 import * as gTs from 'gulp-typescript';
-import * as gDebug from 'gulp-debug';
 import * as mergeStream from 'merge2';
 
 const gSourcemaps = require('gulp-sourcemaps');
@@ -22,19 +22,19 @@ export const getBuildStream = ({ dest, tsProject, taskName }: IGetBuildStream) =
     .pipe(gSourcemaps.init())
     .pipe(
     tsProject(
-      gTs.reporter.fullReporter(true)
+      gTs.reporter.fullReporter(true),
     )
       .once('error', (er: any) => {
         if (er) {
           throw er;
         }
-      })
+      }),
     );
 
   // Write js files
   const jsStream = tsResult.js
     .pipe(gDebug({
-      title: `${taskName}-write-js: `
+      title: `${taskName}-write-js: `,
     }))
     .pipe(gSourcemaps.write('.'))
     .pipe(gulp.dest(dest));
@@ -42,12 +42,12 @@ export const getBuildStream = ({ dest, tsProject, taskName }: IGetBuildStream) =
   // Write typings
   const dtsStream = tsResult.dts
     .pipe(gDebug({
-      title: `${taskName}-write-dts: `
+      title: `${taskName}-write-dts: `,
     }))
     .pipe(gulp.dest(dest));
 
   return mergeStream([
     jsStream,
-    dtsStream
+    dtsStream,
   ]);
 };
