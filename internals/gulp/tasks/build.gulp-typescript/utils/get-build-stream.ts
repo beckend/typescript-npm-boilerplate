@@ -22,13 +22,13 @@ export const getBuildStream = ({ dest, tsProject, taskName }: IGetBuildStream) =
     .pipe(gSourcemaps.init())
     .pipe(
     tsProject(
-      gTs.reporter.fullReporter(true),
+      gTs.reporter.fullReporter(true)
     )
       .once('error', (er: any) => {
         if (er) {
           throw er;
         }
-      }),
+      })
     );
 
   // Write js files

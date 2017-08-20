@@ -1,6 +1,3 @@
-/**
- * es2015 build
- */
 import * as gulp from 'gulp';
 import { createProject } from 'gulp-typescript';
 import * as path from 'path';
@@ -14,12 +11,12 @@ const taskName = 'build:src-es2015';
 
 gulp.task(taskName, () => {
   const tsProject = createProject(
-    path.join(PATH_SRC, 'tsconfig.es2015.json'),
+    path.join(PATH_SRC, 'tsconfig.es2015.json')
   );
 
   return getBuildStream({
+    dest: PATH_BUILD_ES2015,
     taskName,
     tsProject,
-    dest: PATH_BUILD_ES2015,
   });
 });

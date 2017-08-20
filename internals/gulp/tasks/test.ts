@@ -1,7 +1,4 @@
 /* tslint:disable: no-console */
-/**
- * Test
- */
 import { cmdSpawn } from 'cmd-spawn';
 // import {
 //   PATH_PACKAGE,

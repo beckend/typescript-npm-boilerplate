@@ -4,12 +4,24 @@
     "tslint:recommended"
   ],
   "rules": {
-    "quotemark": [true, "single", "avoid-escape"],
+    "jsx-no-multiline-js": false,
     "no-require-imports": false,
     "no-var-requires": false,
-    "jsx-no-multiline-js": false,
-    "jsx-curly-spacing": [2, "always", {"spacing": {
-      "objectLiterals": "never"
-    }}]
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        }
+      }
+    ]
   }
 }

@@ -1,6 +1,3 @@
-/* tslint:disable: no-conditional-assignment */
-/* tslint:disable: no-invalid-this */
-/* tslint:disable: no-function-expression */
 /**
  * Using google closure compiler js
  */
@@ -83,7 +80,7 @@ const writeSingleFile = async ({ filePath, compilerFlags }: IWriteSingleFileArgs
         src: source,
       }],
     },
-    compilerFlags,
+    compilerFlags
   );
   debug(`Minifying: ${filePath}`);
   const output: IGCCompilerOutput = compiler(passedCompilerFlags);
@@ -122,7 +119,7 @@ export const writeAllFiles = ({ filePaths, compilerFlags }: IWriteAllFilesArgs) 
   const writePromises: Array<Bluebird.Thenable<any>> = [];
   filePaths.forEach((filePath) => {
     writePromises.push(
-      writeSingleFile({ filePath, compilerFlags }),
+      writeSingleFile({ filePath, compilerFlags })
     );
   });
   return Bluebird.all(writePromises);

@@ -1,15 +1,14 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": [
-      "es5",
-      "es2015",
+      "esnext",
       "dom"
     ],
     "declaration": true,
     "diagnostics": true,
-    "outDir": "./../build-es5"
+    "outDir": "./../build-esnext"
   },
   "include": [
     "./**/*.ts",

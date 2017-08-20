@@ -1,10 +1,5 @@
-/**
- * Default task
- */
 import * as gulp from 'gulp';
 
-const gV4: any = gulp;
-
-gulp.task('default', gV4.series(
-  gV4.parallel('prepare:publish'),
+gulp.task('default', gulp.series(
+  gulp.parallel('prepare:publish')
 ));

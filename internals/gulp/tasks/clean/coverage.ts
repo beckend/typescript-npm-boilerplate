@@ -1,17 +1,7 @@
-/**
- * Cleanup
- */
-import * as debugMod from 'debug';
-import * as fs from 'fs-extra';
-import * as gulp from 'gulp';
 import { PATH_COVERAGE } from '../../config';
+import { create } from './utils/create-task-clean';
 
-gulp.task('clean:coverage', (done: Function) => {
-  const debug = debugMod('task-clean-coverage');
-  fs.remove(PATH_COVERAGE, (er) => {
-    if (!er) {
-      debug(`Deleted dir: ${PATH_COVERAGE}`);
-    }
-    done();
-  });
+create({
+  path: PATH_COVERAGE,
+  taskName: 'clean:coverage',
 });

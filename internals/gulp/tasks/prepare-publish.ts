@@ -1,22 +1,17 @@
-/**
- * Prepare for publish
- */
 import * as gulp from 'gulp';
 
-const gV4: any = gulp;
-
-gulp.task('prepare:publish', (gV4.series(
-  gV4.parallel(
+gulp.task('prepare:publish', (gulp.series(
+  gulp.parallel(
     'clean:all',
-    'lint:all',
+    'lint:all'
   ),
 
-  gV4.parallel(
+  gulp.parallel(
     'coverage',
 
-    gV4.series(
+    gulp.series(
       'build:all',
-      'minify:all',
-    ),
-  ),
+      'minify:all'
+    )
+  )
 )));

@@ -12,6 +12,7 @@ export const DIR_ETC = 'etc';
 export const DIR_BUILD_ES5 = 'build-es5';
 export const DIR_BUILD_ES2015 = 'build-es2015';
 export const DIR_BUILD_ES2017 = 'build-es2017';
+export const DIR_BUILD_ESNEXT = 'build-esnext';
 export const DIR_NODE_MODULES = 'node_modules';
 
 /**
@@ -33,6 +34,7 @@ export const PATH_TSLINT_DEFAULT = path.join(PATH_ROOT, FILE_TSLINT_DEFAULT);
 export const PATH_BUILD_ES5 = path.join(PATH_ROOT, DIR_BUILD_ES5);
 export const PATH_BUILD_ES2015 = path.join(PATH_ROOT, DIR_BUILD_ES2015);
 export const PATH_BUILD_ES2017 = path.join(PATH_ROOT, DIR_BUILD_ES2017);
+export const PATH_BUILD_ESNEXT = path.join(PATH_ROOT, DIR_BUILD_ESNEXT);
 export const PATH_ETC = path.join(PATH_ROOT, DIR_ETC);
 export const PATH_GULP = path.join(PATH_ETC, 'gulp');
 export const PATH_SRC = path.join(PATH_ROOT, DIR_SRC);

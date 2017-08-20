@@ -14,7 +14,7 @@ export class TestComponent extends React.Component<ITestComponentProps, {}> {
     const props = this.props;
     return (
       <div>
-        { props.str1 }
+        {props.str1}
       </div>
     );
   }

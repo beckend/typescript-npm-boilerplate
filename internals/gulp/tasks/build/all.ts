@@ -1,12 +1,8 @@
-/**
- * Build em all
- */
 import * as gulp from 'gulp';
 
-const gV4: any = gulp;
-
-gulp.task('build:all', gV4.parallel(
+gulp.task('build:all', gulp.parallel(
   'build:src-es5',
   'build:src-es2015',
   'build:src-es2017',
+  'build:src-esnext'
 ));
