@@ -7,7 +7,10 @@ import {
 
 gulp.task('coverage', async () => {
   const pkg = require(PATH_PACKAGE);
-  const cmd = pkg.scripts['test:coverage'];
+  let cmd: string = pkg.scripts['test:coverage'];
+  if (cmd.startsWith('jest') && !cmd.startsWith('./node_modules/.bin/jest')) {
+    cmd = `./node_modules/.bin/${cmd}`;
+  }
   const debug = debugMod('task-coverage');
   debug(`running: ${cmd}`);
   const r = await cmdSpawn(cmd, { buffer: true });
