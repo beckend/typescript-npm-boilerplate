@@ -8,6 +8,7 @@ build-esnext
 coverage
 node_modules
 npm-debug.log
+package-lock.json
 src/**/*.js
 src/**/*.map
 tmp
